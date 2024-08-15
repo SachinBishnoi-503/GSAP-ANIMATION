@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> gsap animation </title>
+</head>
+
+<body>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 51px;
+            position: absolute;
+        }
+
+        .box1 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 51px;
+            position: absolute;
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 51px;
+            position: absolute;
+        }
+
+        .box3 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 51px;
+            position: absolute;
+        }
+
+        .box4 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 51px;
+            position: absolute;
+        }
+
+        .box5 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 51px;
+            position: absolute;
+        }
+    </style>
+    <div class="box" id="home">
+    </div>
+    <div class="box1" id="home1">
+    </div>
+    <div class="box2" id="home2">
+    </div>
+    <div class="box3" id="home3">
+    </div>
+    <div class="box4" id="home4">
+    </div>
+    <div class="box5" id="home5">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+        gsap.to(
+            "#home5", {
+            xPercent: "900",
+            duration: 2,
+            backgroundColor: "blue",
+            repeat: -1,
+            yoyo: true,
+            rotation:200,
+        }
+        );
+        gsap.to(
+            "#home4", {
+            yPercent: "350",
+            duration: 1.8,
+            backgroundColor: "aqua",
+            repeat: -1,
+            yoyo: true,
+            rotation: 300,
+
+        }
+        );
+        gsap.to(
+            "#home3", {
+            xPercent: "880",
+            duration: 2,
+            backgroundColor: "black",
+            repeat: -1,
+            yoyo: true,
+            rotation: 350,
+
+        }
+        );
+        gsap.to(
+            "#home2", {
+            yPercent: "350",
+            duration: 1.8,
+            backgroundColor: "yellow",
+            repeat: -1,
+            yoyo: true,
+            rotation: 500,
+
+        }
+        );
+        gsap.to(
+            "#home1", {
+            xPercent: "840",
+            duration: 2,
+            backgroundColor: "brown",
+            repeat: -1,
+            yoyo: true,
+            rotation: 600,
+
+        }
+        );
+        gsap.to(
+            "#home", {
+            yPercent: "350",
+            duration: 1.8,
+            backgroundColor: "gray",
+            repeat: -1,
+            yoyo: true,
+            rotation: 700,
+
+        }
+        );
+        gsap.fromTo(
+            "#home",
+            {
+                xPercent: "350",
+                duration: 1,
+                // backgroundColor: "#00ff00",
+                yoyo: true,
+                repeat: 1,
+            }
+        );
+        // gsap.fromTo(
+        //     "#home1",
+        //     {
+        //         yPercent: "390",
+        //         duration: 2,
+        //         backgroundColor: "#00ff00",
+        //         // yoyo: true,
+        //         // repeat: -1,
+        //     }
+        //     ,
+        //     {
+        //         yPercent: 8,
+        //         duration: 2,
+        //         // yoyo: true,
+        //         // repeat: -1,
+        //     }
+        // );
+        // gsap.from(
+        //     "#home2",
+        //     {
+        //         xPercent: "120",
+        //         duration: 2,
+        //         backgroundColor: "#00ff00",
+        //         // yoyo: true,
+        //         // repeat: -1,
+        //         rotate: 200,
+        //     }
+        // );
+        // gsap.from(
+        //     "#home4",
+        //     {
+        //         yPercent: "-200",
+        //         duration: 2,
+        //         backgroundColor: "#000000",
+        //         // yoyo: true,
+        //         // repeat: -1,
+        //         rotate: 220,
+        //     }
+        // );
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
